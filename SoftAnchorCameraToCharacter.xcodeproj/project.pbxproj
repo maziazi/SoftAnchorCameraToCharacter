@@ -35,16 +35,6 @@
 			path = SoftAnchorCameraToCharacter;
 			sourceTree = "<group>";
 		};
-		5CD0A7C32E22C62C0029C655 /* SoftAnchorCameraToCharacterTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SoftAnchorCameraToCharacterTests;
-			sourceTree = "<group>";
-		};
-		5CD0A7CD2E22C62C0029C655 /* SoftAnchorCameraToCharacterUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SoftAnchorCameraToCharacterUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				5CD0A7B52E22C62A0029C655 /* SoftAnchorCameraToCharacter */,
-				5CD0A7C32E22C62C0029C655 /* SoftAnchorCameraToCharacterTests */,
-				5CD0A7CD2E22C62C0029C655 /* SoftAnchorCameraToCharacterUITests */,
 				5CD0A7B42E22C62A0029C655 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +118,6 @@
 			dependencies = (
 				5CD0A7C22E22C62C0029C655 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				5CD0A7C32E22C62C0029C655 /* SoftAnchorCameraToCharacterTests */,
-			);
 			name = SoftAnchorCameraToCharacterTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +137,6 @@
 			);
 			dependencies = (
 				5CD0A7CC2E22C62C0029C655 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				5CD0A7CD2E22C62C0029C655 /* SoftAnchorCameraToCharacterUITests */,
 			);
 			name = SoftAnchorCameraToCharacterUITests;
 			packageProductDependencies = (
