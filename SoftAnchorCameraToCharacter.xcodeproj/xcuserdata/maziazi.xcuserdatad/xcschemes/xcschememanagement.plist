@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SoftAnchorCameraToCharacter.xcscheme_^#shared#^_</key>
+		<key>3DGameARView.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Canvas3DDragDrop.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5C4A30302E05EEC300D3ECEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5C4A303D2E05EEC500D3ECEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5C4A30472E05EEC500D3ECEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

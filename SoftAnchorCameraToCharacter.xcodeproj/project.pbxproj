@@ -6,53 +6,71 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5C4A354B2E18268E00D3ECEE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5C4A354A2E18267E00D3ECEE /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
-		5CD0A7C12E22C62C0029C655 /* PBXContainerItemProxy */ = {
+		5C4A303F2E05EEC500D3ECEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5CD0A7AB2E22C62A0029C655 /* Project object */;
+			containerPortal = 5C4A30292E05EEC300D3ECEE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5CD0A7B22E22C62A0029C655;
-			remoteInfo = SoftAnchorCameraToCharacter;
+			remoteGlobalIDString = 5C4A30302E05EEC300D3ECEE;
+			remoteInfo = Canvas3DDragDrop;
 		};
-		5CD0A7CB2E22C62C0029C655 /* PBXContainerItemProxy */ = {
+		5C4A30492E05EEC500D3ECEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5CD0A7AB2E22C62A0029C655 /* Project object */;
+			containerPortal = 5C4A30292E05EEC300D3ECEE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5CD0A7B22E22C62A0029C655;
-			remoteInfo = SoftAnchorCameraToCharacter;
+			remoteGlobalIDString = 5C4A30302E05EEC300D3ECEE;
+			remoteInfo = Canvas3DDragDrop;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5CD0A7B32E22C62A0029C655 /* SoftAnchorCameraToCharacter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftAnchorCameraToCharacter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CD0A7C02E22C62C0029C655 /* SoftAnchorCameraToCharacterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftAnchorCameraToCharacterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CD0A7CA2E22C62C0029C655 /* SoftAnchorCameraToCharacterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftAnchorCameraToCharacterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4A30312E05EEC300D3ECEE /* SoftAnchorCameraToCharacter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoftAnchorCameraToCharacter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4A303E2E05EEC500D3ECEE /* SoftAnchorCameraToCharacterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftAnchorCameraToCharacterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4A30482E05EEC500D3ECEE /* SoftAnchorCameraToCharacterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoftAnchorCameraToCharacterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4A354A2E18267E00D3ECEE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5C4A30712E06EE3900D3ECEE /* Exceptions for "Canvas3DDragDrop" folder in "SoftAnchorCameraToCharacter" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5C4A30302E05EEC300D3ECEE /* SoftAnchorCameraToCharacter */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5CD0A7B52E22C62A0029C655 /* SoftAnchorCameraToCharacter */ = {
+		5C4A30332E05EEC300D3ECEE /* Canvas3DDragDrop */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SoftAnchorCameraToCharacter;
+			exceptions = (
+				5C4A30712E06EE3900D3ECEE /* Exceptions for "Canvas3DDragDrop" folder in "SoftAnchorCameraToCharacter" target */,
+			);
+			path = Canvas3DDragDrop;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5CD0A7B02E22C62A0029C655 /* Frameworks */ = {
+		5C4A302E2E05EEC300D3ECEE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5CD0A7BD2E22C62C0029C655 /* Frameworks */ = {
+		5C4A303B2E05EEC500D3ECEE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5CD0A7C72E22C62C0029C655 /* Frameworks */ = {
+		5C4A30452E05EEC500D3ECEE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,20 +80,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5CD0A7AA2E22C62A0029C655 = {
+		5C4A30282E05EEC300D3ECEE = {
 			isa = PBXGroup;
 			children = (
-				5CD0A7B52E22C62A0029C655 /* SoftAnchorCameraToCharacter */,
-				5CD0A7B42E22C62A0029C655 /* Products */,
+				5C4A354A2E18267E00D3ECEE /* README.md */,
+				5C4A30332E05EEC300D3ECEE /* Canvas3DDragDrop */,
+				5C4A30322E05EEC300D3ECEE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5CD0A7B42E22C62A0029C655 /* Products */ = {
+		5C4A30322E05EEC300D3ECEE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5CD0A7B32E22C62A0029C655 /* SoftAnchorCameraToCharacter.app */,
-				5CD0A7C02E22C62C0029C655 /* SoftAnchorCameraToCharacterTests.xctest */,
-				5CD0A7CA2E22C62C0029C655 /* SoftAnchorCameraToCharacterUITests.xctest */,
+				5C4A30312E05EEC300D3ECEE /* SoftAnchorCameraToCharacter.app */,
+				5C4A303E2E05EEC500D3ECEE /* SoftAnchorCameraToCharacterTests.xctest */,
+				5C4A30482E05EEC500D3ECEE /* SoftAnchorCameraToCharacterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,128 +102,129 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5CD0A7B22E22C62A0029C655 /* SoftAnchorCameraToCharacter */ = {
+		5C4A30302E05EEC300D3ECEE /* SoftAnchorCameraToCharacter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5CD0A7D42E22C62C0029C655 /* Build configuration list for PBXNativeTarget "SoftAnchorCameraToCharacter" */;
+			buildConfigurationList = 5C4A30522E05EEC500D3ECEE /* Build configuration list for PBXNativeTarget "SoftAnchorCameraToCharacter" */;
 			buildPhases = (
-				5CD0A7AF2E22C62A0029C655 /* Sources */,
-				5CD0A7B02E22C62A0029C655 /* Frameworks */,
-				5CD0A7B12E22C62A0029C655 /* Resources */,
+				5C4A302D2E05EEC300D3ECEE /* Sources */,
+				5C4A302E2E05EEC300D3ECEE /* Frameworks */,
+				5C4A302F2E05EEC300D3ECEE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5CD0A7B52E22C62A0029C655 /* SoftAnchorCameraToCharacter */,
+				5C4A30332E05EEC300D3ECEE /* Canvas3DDragDrop */,
 			);
 			name = SoftAnchorCameraToCharacter;
 			packageProductDependencies = (
 			);
-			productName = SoftAnchorCameraToCharacter;
-			productReference = 5CD0A7B32E22C62A0029C655 /* SoftAnchorCameraToCharacter.app */;
+			productName = Canvas3DDragDrop;
+			productReference = 5C4A30312E05EEC300D3ECEE /* SoftAnchorCameraToCharacter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5CD0A7BF2E22C62C0029C655 /* SoftAnchorCameraToCharacterTests */ = {
+		5C4A303D2E05EEC500D3ECEE /* SoftAnchorCameraToCharacterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5CD0A7D72E22C62C0029C655 /* Build configuration list for PBXNativeTarget "SoftAnchorCameraToCharacterTests" */;
+			buildConfigurationList = 5C4A30552E05EEC500D3ECEE /* Build configuration list for PBXNativeTarget "SoftAnchorCameraToCharacterTests" */;
 			buildPhases = (
-				5CD0A7BC2E22C62C0029C655 /* Sources */,
-				5CD0A7BD2E22C62C0029C655 /* Frameworks */,
-				5CD0A7BE2E22C62C0029C655 /* Resources */,
+				5C4A303A2E05EEC500D3ECEE /* Sources */,
+				5C4A303B2E05EEC500D3ECEE /* Frameworks */,
+				5C4A303C2E05EEC500D3ECEE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5CD0A7C22E22C62C0029C655 /* PBXTargetDependency */,
+				5C4A30402E05EEC500D3ECEE /* PBXTargetDependency */,
 			);
 			name = SoftAnchorCameraToCharacterTests;
 			packageProductDependencies = (
 			);
-			productName = SoftAnchorCameraToCharacterTests;
-			productReference = 5CD0A7C02E22C62C0029C655 /* SoftAnchorCameraToCharacterTests.xctest */;
+			productName = Canvas3DDragDropTests;
+			productReference = 5C4A303E2E05EEC500D3ECEE /* SoftAnchorCameraToCharacterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5CD0A7C92E22C62C0029C655 /* SoftAnchorCameraToCharacterUITests */ = {
+		5C4A30472E05EEC500D3ECEE /* SoftAnchorCameraToCharacterUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5CD0A7DA2E22C62C0029C655 /* Build configuration list for PBXNativeTarget "SoftAnchorCameraToCharacterUITests" */;
+			buildConfigurationList = 5C4A30582E05EEC500D3ECEE /* Build configuration list for PBXNativeTarget "SoftAnchorCameraToCharacterUITests" */;
 			buildPhases = (
-				5CD0A7C62E22C62C0029C655 /* Sources */,
-				5CD0A7C72E22C62C0029C655 /* Frameworks */,
-				5CD0A7C82E22C62C0029C655 /* Resources */,
+				5C4A30442E05EEC500D3ECEE /* Sources */,
+				5C4A30452E05EEC500D3ECEE /* Frameworks */,
+				5C4A30462E05EEC500D3ECEE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5CD0A7CC2E22C62C0029C655 /* PBXTargetDependency */,
+				5C4A304A2E05EEC500D3ECEE /* PBXTargetDependency */,
 			);
 			name = SoftAnchorCameraToCharacterUITests;
 			packageProductDependencies = (
 			);
-			productName = SoftAnchorCameraToCharacterUITests;
-			productReference = 5CD0A7CA2E22C62C0029C655 /* SoftAnchorCameraToCharacterUITests.xctest */;
+			productName = Canvas3DDragDropUITests;
+			productReference = 5C4A30482E05EEC500D3ECEE /* SoftAnchorCameraToCharacterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5CD0A7AB2E22C62A0029C655 /* Project object */ = {
+		5C4A30292E05EEC300D3ECEE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
-					5CD0A7B22E22C62A0029C655 = {
+					5C4A30302E05EEC300D3ECEE = {
 						CreatedOnToolsVersion = 16.3;
 					};
-					5CD0A7BF2E22C62C0029C655 = {
+					5C4A303D2E05EEC500D3ECEE = {
 						CreatedOnToolsVersion = 16.3;
-						TestTargetID = 5CD0A7B22E22C62A0029C655;
+						TestTargetID = 5C4A30302E05EEC300D3ECEE;
 					};
-					5CD0A7C92E22C62C0029C655 = {
+					5C4A30472E05EEC500D3ECEE = {
 						CreatedOnToolsVersion = 16.3;
-						TestTargetID = 5CD0A7B22E22C62A0029C655;
+						TestTargetID = 5C4A30302E05EEC300D3ECEE;
 					};
 				};
 			};
-			buildConfigurationList = 5CD0A7AE2E22C62A0029C655 /* Build configuration list for PBXProject "SoftAnchorCameraToCharacter" */;
+			buildConfigurationList = 5C4A302C2E05EEC300D3ECEE /* Build configuration list for PBXProject "SoftAnchorCameraToCharacter" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 5CD0A7AA2E22C62A0029C655;
+			mainGroup = 5C4A30282E05EEC300D3ECEE;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 5CD0A7B42E22C62A0029C655 /* Products */;
+			productRefGroup = 5C4A30322E05EEC300D3ECEE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5CD0A7B22E22C62A0029C655 /* SoftAnchorCameraToCharacter */,
-				5CD0A7BF2E22C62C0029C655 /* SoftAnchorCameraToCharacterTests */,
-				5CD0A7C92E22C62C0029C655 /* SoftAnchorCameraToCharacterUITests */,
+				5C4A30302E05EEC300D3ECEE /* SoftAnchorCameraToCharacter */,
+				5C4A303D2E05EEC500D3ECEE /* SoftAnchorCameraToCharacterTests */,
+				5C4A30472E05EEC500D3ECEE /* SoftAnchorCameraToCharacterUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5CD0A7B12E22C62A0029C655 /* Resources */ = {
+		5C4A302F2E05EEC300D3ECEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C4A354B2E18268E00D3ECEE /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C4A303C2E05EEC500D3ECEE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5CD0A7BE2E22C62C0029C655 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5CD0A7C82E22C62C0029C655 /* Resources */ = {
+		5C4A30462E05EEC500D3ECEE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,21 +234,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5CD0A7AF2E22C62A0029C655 /* Sources */ = {
+		5C4A302D2E05EEC300D3ECEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5CD0A7BC2E22C62C0029C655 /* Sources */ = {
+		5C4A303A2E05EEC500D3ECEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5CD0A7C62E22C62C0029C655 /* Sources */ = {
+		5C4A30442E05EEC500D3ECEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -238,20 +258,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5CD0A7C22E22C62C0029C655 /* PBXTargetDependency */ = {
+		5C4A30402E05EEC500D3ECEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5CD0A7B22E22C62A0029C655 /* SoftAnchorCameraToCharacter */;
-			targetProxy = 5CD0A7C12E22C62C0029C655 /* PBXContainerItemProxy */;
+			target = 5C4A30302E05EEC300D3ECEE /* SoftAnchorCameraToCharacter */;
+			targetProxy = 5C4A303F2E05EEC500D3ECEE /* PBXContainerItemProxy */;
 		};
-		5CD0A7CC2E22C62C0029C655 /* PBXTargetDependency */ = {
+		5C4A304A2E05EEC500D3ECEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5CD0A7B22E22C62A0029C655 /* SoftAnchorCameraToCharacter */;
-			targetProxy = 5CD0A7CB2E22C62C0029C655 /* PBXContainerItemProxy */;
+			target = 5C4A30302E05EEC300D3ECEE /* SoftAnchorCameraToCharacter */;
+			targetProxy = 5C4A30492E05EEC500D3ECEE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5CD0A7D22E22C62C0029C655 /* Debug */ = {
+		5C4A30502E05EEC500D3ECEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -315,7 +335,7 @@
 			};
 			name = Debug;
 		};
-		5CD0A7D32E22C62C0029C655 /* Release */ = {
+		5C4A30512E05EEC500D3ECEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -372,7 +392,7 @@
 			};
 			name = Release;
 		};
-		5CD0A7D52E22C62C0029C655 /* Debug */ = {
+		5C4A30532E05EEC500D3ECEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -382,11 +402,10 @@
 				DEVELOPMENT_TEAM = KY4XDK75RG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_FILE = Canvas3DDragDrop/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -394,7 +413,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.academy.SoftAnchorCameraToCharacter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.academy.Canvas3DDragDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -402,7 +421,7 @@
 			};
 			name = Debug;
 		};
-		5CD0A7D62E22C62C0029C655 /* Release */ = {
+		5C4A30542E05EEC500D3ECEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -412,11 +431,10 @@
 				DEVELOPMENT_TEAM = KY4XDK75RG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_FILE = Canvas3DDragDrop/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -424,7 +442,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.academy.SoftAnchorCameraToCharacter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.academy.Canvas3DDragDrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -432,7 +450,7 @@
 			};
 			name = Release;
 		};
-		5CD0A7D82E22C62C0029C655 /* Debug */ = {
+		5C4A30562E05EEC500D3ECEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -442,7 +460,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.academy.SoftAnchorCameraToCharacterTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.academy.Canvas3DDragDropTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -451,7 +469,7 @@
 			};
 			name = Debug;
 		};
-		5CD0A7D92E22C62C0029C655 /* Release */ = {
+		5C4A30572E05EEC500D3ECEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -461,7 +479,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.academy.SoftAnchorCameraToCharacterTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.academy.Canvas3DDragDropTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -470,7 +488,7 @@
 			};
 			name = Release;
 		};
-		5CD0A7DB2E22C62C0029C655 /* Debug */ = {
+		5C4A30592E05EEC500D3ECEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -478,16 +496,16 @@
 				DEVELOPMENT_TEAM = KY4XDK75RG;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.academy.SoftAnchorCameraToCharacterUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.academy.Canvas3DDragDropUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SoftAnchorCameraToCharacter;
+				TEST_TARGET_NAME = Canvas3DDragDrop;
 			};
 			name = Debug;
 		};
-		5CD0A7DC2E22C62C0029C655 /* Release */ = {
+		5C4A305A2E05EEC500D3ECEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -495,55 +513,55 @@
 				DEVELOPMENT_TEAM = KY4XDK75RG;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.academy.SoftAnchorCameraToCharacterUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.academy.Canvas3DDragDropUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SoftAnchorCameraToCharacter;
+				TEST_TARGET_NAME = Canvas3DDragDrop;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5CD0A7AE2E22C62A0029C655 /* Build configuration list for PBXProject "SoftAnchorCameraToCharacter" */ = {
+		5C4A302C2E05EEC300D3ECEE /* Build configuration list for PBXProject "SoftAnchorCameraToCharacter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5CD0A7D22E22C62C0029C655 /* Debug */,
-				5CD0A7D32E22C62C0029C655 /* Release */,
+				5C4A30502E05EEC500D3ECEE /* Debug */,
+				5C4A30512E05EEC500D3ECEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5CD0A7D42E22C62C0029C655 /* Build configuration list for PBXNativeTarget "SoftAnchorCameraToCharacter" */ = {
+		5C4A30522E05EEC500D3ECEE /* Build configuration list for PBXNativeTarget "SoftAnchorCameraToCharacter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5CD0A7D52E22C62C0029C655 /* Debug */,
-				5CD0A7D62E22C62C0029C655 /* Release */,
+				5C4A30532E05EEC500D3ECEE /* Debug */,
+				5C4A30542E05EEC500D3ECEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5CD0A7D72E22C62C0029C655 /* Build configuration list for PBXNativeTarget "SoftAnchorCameraToCharacterTests" */ = {
+		5C4A30552E05EEC500D3ECEE /* Build configuration list for PBXNativeTarget "SoftAnchorCameraToCharacterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5CD0A7D82E22C62C0029C655 /* Debug */,
-				5CD0A7D92E22C62C0029C655 /* Release */,
+				5C4A30562E05EEC500D3ECEE /* Debug */,
+				5C4A30572E05EEC500D3ECEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5CD0A7DA2E22C62C0029C655 /* Build configuration list for PBXNativeTarget "SoftAnchorCameraToCharacterUITests" */ = {
+		5C4A30582E05EEC500D3ECEE /* Build configuration list for PBXNativeTarget "SoftAnchorCameraToCharacterUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5CD0A7DB2E22C62C0029C655 /* Debug */,
-				5CD0A7DC2E22C62C0029C655 /* Release */,
+				5C4A30592E05EEC500D3ECEE /* Debug */,
+				5C4A305A2E05EEC500D3ECEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5CD0A7AB2E22C62A0029C655 /* Project object */;
+	rootObject = 5C4A30292E05EEC300D3ECEE /* Project object */;
 }
