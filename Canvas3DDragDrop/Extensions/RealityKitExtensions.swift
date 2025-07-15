@@ -31,6 +31,12 @@ class CanvasCoordinator: NSObject {
     var lastUserInteraction: Date = Date()
     private let followResumeDelay: TimeInterval = 2.0
     
+    // ✨ NEW: Chair side movement properties
+    var chairSideVelocity: Float = 0.0 // Current side velocity
+    var chairTargetSideVelocity: Float = 0.0 // Target side velocity
+    var chairSideDecay: Float = 0.95 // How quickly side movement decays
+    var chairSideAcceleration: Float = 0.08 // How quickly chair reaches target velocity
+    
     init(_ parent: RealityKitCanvasView) {
         self.parent = parent
         super.init()
@@ -45,6 +51,7 @@ class CanvasCoordinator: NSObject {
     func startCameraFollowUpdate() {
         cameraFollowTimer = Timer.scheduledTimer(withTimeInterval: 0.016, repeats: true) { [weak self] _ in
             self?.updateCameraFollow()
+            self?.updateChairSideMovement() // ✨ NEW: Update chair side movement
         }
     }
     
@@ -63,6 +70,31 @@ class CanvasCoordinator: NSObject {
         
         // Update camera position (will handle current mode automatically)
         updateCameraPosition()
+    }
+    
+    // ✨ NEW: Chair side movement update
+    func updateChairSideMovement() {
+        guard let kursi = allObjects.first(where: { $0.name == "kursi" }) else { return }
+        
+        // Smoothly interpolate current velocity toward target velocity
+        chairSideVelocity = chairSideVelocity + (chairTargetSideVelocity - chairSideVelocity) * chairSideAcceleration
+        
+        // Apply side movement
+        if abs(chairSideVelocity) > 0.001 {
+            kursi.position.x += chairSideVelocity
+        }
+        
+        // Apply decay to both velocities
+        chairSideVelocity *= chairSideDecay
+        chairTargetSideVelocity *= chairSideDecay
+        
+        // Stop very small movements
+        if abs(chairSideVelocity) < 0.001 {
+            chairSideVelocity = 0
+        }
+        if abs(chairTargetSideVelocity) < 0.001 {
+            chairTargetSideVelocity = 0
+        }
     }
     
     // MARK: - Gesture Handlers
@@ -126,9 +158,14 @@ class CanvasCoordinator: NSObject {
                 }
             } else {
                 if numberOfTouches == 1 {
-                    // Rotate canvas with one finger (mode-aware)
-                    print("Rotating canvas with 1 finger - Mode: \(UnifiedCameraManager.getCurrentModeString())")
-                    UnifiedCameraManager.rotateCanvas(translation: translation, coordinator: self)
+                    // ✨ NEW: Handle chair side movement in follow mode
+                    if UnifiedCameraManager.isFollowMode() {
+                        handleChairSideMovement(translation: translation)
+                    } else {
+                        // Rotate canvas with one finger (mode-aware)
+                        print("Rotating canvas with 1 finger - Mode: \(UnifiedCameraManager.getCurrentModeString())")
+                        UnifiedCameraManager.rotateCanvas(translation: translation, coordinator: self)
+                    }
                 } else if numberOfTouches == 2 {
                     // Pan canvas with two fingers (mode-aware)
                     print("Panning canvas with 2 fingers - Mode: \(UnifiedCameraManager.getCurrentModeString())")
@@ -152,6 +189,26 @@ class CanvasCoordinator: NSObject {
         }
         
         GridManager.updateGridPosition(coordinator: self)
+    }
+    
+    // ✨ NEW: Handle chair side movement with horizontal swipe
+    func handleChairSideMovement(translation: CGPoint) {
+        let horizontalMovement = Float(translation.x)
+        let verticalMovement = Float(translation.y)
+        
+        // Only respond to primarily horizontal movement
+        if abs(horizontalMovement) > abs(verticalMovement) {
+            let sideImpulse: Float = horizontalMovement * 0.002 // Adjust sensitivity
+            
+            // Add impulse to target velocity (accumulative for continuous swiping)
+            chairTargetSideVelocity += sideImpulse
+            
+            // Limit maximum side velocity
+            let maxSideVelocity: Float = 0.05
+            chairTargetSideVelocity = max(-maxSideVelocity, min(maxSideVelocity, chairTargetSideVelocity))
+            
+            print("Chair side movement: \(sideImpulse > 0 ? "RIGHT" : "LEFT"), velocity: \(chairTargetSideVelocity)")
+        }
     }
     
     @objc func handlePinch(_ gesture: UIPinchGestureRecognizer) {

@@ -49,6 +49,15 @@ struct CanvasView: View {
                             .padding(.vertical, 6)
                             .background(Color.black.opacity(0.6))
                             .cornerRadius(8)
+                        
+                        // ✨ NEW: Show side movement instructions in follow mode
+                        if cameraMode == "Follow" {
+                            Text("Swipe left/right to steer")
+                                .font(.caption2)
+                                .foregroundColor(.white)
+                                .opacity(0.7)
+                                .padding(.top, 2)
+                        }
                     }
                     
                     Spacer()
@@ -129,7 +138,7 @@ struct CanvasView: View {
     
     func startIdleMovement() {
         moveTimer = Timer.scheduledTimer(withTimeInterval: moveInterval, repeats: true) { _ in
-            moveChairBackward()
+            moveChairForward() // ✨ UPDATED: Renamed for clarity
         }
     }
     
@@ -138,15 +147,21 @@ struct CanvasView: View {
         moveTimer = nil
     }
     
-    func moveChairBackward() {
+    // ✨ UPDATED: Enhanced forward movement (unchanged behavior but clearer naming)
+    func moveChairForward() {
         guard let kursi = placedObjects.first(where: { $0.name == "kursi" }) else {
             return
         }
         
+        // Continue forward movement as before
         kursi.position.z -= moveSpeed
         
+        // Reset position when chair goes too far back
         if kursi.position.z < -5.0 {
             kursi.position.z = 2.0
+            // ✨ NEW: Reset X position to center when resetting Z (optional)
+            // Uncomment next line if you want chair to return to center X when resetting
+            // kursi.position.x = 0
         }
     }
     
